@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ganesh Mohan | Product Lead, B2B SaaS, Streaming and AI</title>
+<meta name="description" content="Ganesh Mohan is a product lead with 5+ years in B2B SaaS, OTT streaming and AI platforms, leading a platform used by 500+ enterprise customers.">
+<meta property="og:title" content="Ganesh Mohan | Product Lead">
+<meta property="og:description" content="B2B SaaS, streaming and AI product leader. 500+ enterprise customers, ~40% lower AI inference cost, 0→1 to scale.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#151A30">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23151A30'/><text x='10' y='44' font-family='Arial' font-weight='700' font-size='28' fill='white'>GM</text><circle cx='53' cy='12' r='7' fill='%23FFC23D'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600&family=Big+Shoulders+Display:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EDEFF4; --card:#F7F8FB; --ink:#151A30; --ink-2:#20274A; --muted:#575D76;
+  --signal:#3A47F5; --signal-soft:#7480FF; --tally:#FFC23D; --line:rgba(21,26,48,.14);
+  --on-ink:#E9EBF5; --on-ink-muted:#A3A9C4; --field:#272E52;
+  --display:"Big Shoulders Display","Arial Narrow",Impact,sans-serif;
+  --body:"Albert Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --wrap:1180px; --gutter:clamp(20px,5vw,56px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+::selection{background:var(--tally);color:var(--ink)}
+:focus-visible{outline:3px solid var(--signal);outline-offset:3px;border-radius:6px}
+.contact :focus-visible,.player :focus-visible{outline-color:var(--tally)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-9999px;top:10px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:10px;z-index:100;text-decoration:none}
+.skip:focus{left:10px}
+section[id]{scroll-margin-top:84px}
+
+/* Header */
+.site-head{position:sticky;top:0;z-index:50;background:rgba(237,239,244,.86);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .2s}
+.site-head.scrolled{border-color:var(--line)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:600}
+.mono{position:relative;width:38px;height:38px;border-radius:11px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:800;font-size:19px;letter-spacing:.02em}
+.mono::after{content:"";position:absolute;top:-4px;right:-4px;width:12px;height:12px;border-radius:50%;background:var(--tally);border:2px solid var(--paper)}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a:not(.btn){text-decoration:none;font-weight:500;color:var(--muted);transition:color .15s}
+.nav a:not(.btn):hover{color:var(--ink)}
+@media (max-width:760px){.nav a:not(.btn){display:none}}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;border:1.5px solid var(--ink);font:600 1rem/1 var(--body);text-decoration:none;cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.btn-solid{background:var(--ink);color:#fff}
+.btn-solid:hover{background:var(--signal);border-color:var(--signal)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-sm{min-height:40px;padding:0 18px;font-size:.95rem}
+
+/* Hero */
+.hero{padding:clamp(36px,7vw,88px) 0 clamp(56px,8vw,104px)}
+.status{display:inline-flex;align-items:center;gap:10px;color:var(--muted);font-weight:500;font-size:.98rem}
+.tally{width:10px;height:10px;border-radius:50%;background:var(--tally);box-shadow:0 0 0 4px rgba(255,194,61,.28);flex:none}
+.hero-grid{display:grid;gap:28px;margin-top:18px}
+@media (min-width:960px){.hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);align-items:end;gap:48px}}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(4.5rem,15vw,11.5rem);line-height:.84;letter-spacing:-.005em;margin:0}
+.lede{font-size:clamp(1.2rem,2vw,1.45rem);line-height:1.45;margin:0;max-width:36ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* Player */
+.player{margin-top:clamp(40px,6vw,72px);background:var(--ink);color:var(--on-ink);border-radius:24px;padding:clamp(22px,4vw,48px)}
+.player-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 24px;color:var(--on-ink-muted);font-size:.95rem}
+.player-head strong{color:var(--on-ink);font-weight:600}
+.chapter{display:grid;gap:26px;margin-top:20px}
+.chapter:focus-visible{outline-offset:8px}
+@media (min-width:900px){.chapter{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:56px}}
+.chapter h2{font-family:var(--display);font-weight:800;font-size:clamp(2.3rem,5vw,3.7rem);line-height:.95;margin:0;color:#fff}
+.chapter .org{margin:10px 0 0;font-weight:600;color:var(--signal-soft)}
+.chapter .sum{margin:16px 0 0;max-width:52ch}
+.figs{display:flex;flex-wrap:wrap;gap:20px 32px;margin-top:26px}
+.fig b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(2.2rem,4vw,2.8rem);line-height:1;color:#fff}
+.fig span{display:block;margin-top:6px;color:var(--on-ink-muted);font-size:.9rem;max-width:18ch;line-height:1.35}
+.points{list-style:none;margin:0;padding:0;display:grid;gap:14px;align-content:start}
+.points li{position:relative;padding-left:24px}
+.points li::before{content:"";position:absolute;left:0;top:.72em;width:12px;height:2px;background:var(--tally)}
+.swap{animation:swap .35s ease}
+@keyframes swap{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+.scrub{display:flex;gap:5px;margin-top:clamp(32px,4.5vw,48px)}
+.seg{position:relative;flex:var(--m) 1 0%;min-width:0;background:none;border:0;padding:0 0 4px;margin:0;text-align:left;color:var(--on-ink-muted);font:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.seg .bar{display:block;height:8px;border-radius:4px;background:rgba(255,255,255,.14);overflow:hidden;position:relative;transition:transform .2s}
+.seg:hover .bar{transform:scaleY(1.5)}
+.seg .bar i{position:absolute;inset:0;background:var(--signal-soft);transform:scaleX(0);transform-origin:left;transition:transform .55s cubic-bezier(.2,.7,.2,1)}
+.seg.played .bar i{transform:scaleX(1)}
+.seg .head{position:absolute;right:-7px;top:-4px;width:16px;height:16px;border-radius:50%;background:var(--tally);box-shadow:0 0 0 5px rgba(255,194,61,.22);opacity:0;transition:opacity .3s}
+.seg.played[aria-selected="true"] .head{opacity:1}
+.seg .yr{display:block;margin-top:14px;font-weight:600;color:var(--on-ink);transition:color .15s}
+.seg .rl{display:block;font-size:.85rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.seg[aria-selected="true"] .yr{color:var(--tally)}
+.seg:hover .yr{color:#fff}
+.intro .seg .bar i{transition-delay:calc(var(--i) * .16s)}
+.intro .seg .head{transition-delay:.85s}
+@media (max-width:640px){.seg .rl{display:none}.seg .yr{font-size:.88rem}}
+
+/* Sections */
+.section{padding:clamp(72px,10vw,128px) 0}
+.sec-head h2{font-family:var(--display);font-weight:800;font-size:clamp(2.7rem,6vw,4.6rem);line-height:.92;margin:0}
+.sec-head p{color:var(--muted);margin:16px 0 0;max-width:46ch;font-size:1.1rem}
+
+.results{display:grid;gap:40px 48px;margin:56px 0 0}
+@media (min-width:720px){.results{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1040px){.results{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.results > div{border-top:1.5px solid var(--ink);padding-top:18px}
+.results dt{font-family:var(--display);font-weight:800;font-size:clamp(3.2rem,6vw,4.4rem);line-height:1}
+.results dd{margin:10px 0 0;color:var(--muted);max-width:34ch}
+
+.work{display:grid;gap:36px}
+@media (min-width:960px){.work{grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:72px}.work .sec-head{position:sticky;top:110px;align-self:start}}
+.case{border-top:1.5px solid var(--ink);padding:28px 0 40px}
+.case:last-child{padding-bottom:0}
+.case h3{font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,3.6vw,2.6rem);line-height:1;margin:0}
+.case .where{margin:8px 0 0;color:var(--muted);font-weight:500;font-size:.95rem}
+.case p{margin:16px 0 0;max-width:62ch}
+.out{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.out li{background:var(--ink);color:#fff;border-radius:8px;padding:7px 12px;font-weight:600;font-size:.95rem;line-height:1.3}
+
+.kit{display:grid;gap:40px 48px;margin-top:52px}
+@media (min-width:720px){.kit{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1040px){.kit{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.kit h3{margin:0 0 14px;font-size:1.05rem;font-weight:600}
+.chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:.92rem;line-height:1.4}
+.creds{list-style:none;margin:64px 0 0;padding:28px 0 0;border-top:1.5px solid var(--ink);display:grid;gap:18px 48px}
+@media (min-width:720px){.creds{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.creds b{display:block;font-weight:600}
+.creds span{color:var(--muted);font-size:.95rem}
+
+/* Contact */
+.contact{background:var(--ink);color:var(--on-ink);border-radius:32px 32px 0 0;padding:clamp(64px,9vw,112px) 0 40px}
+.contact-grid{display:grid;gap:44px}
+@media (min-width:960px){.contact-grid{grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:72px}}
+.contact h2{font-family:var(--display);font-weight:800;font-size:clamp(2.8rem,7vw,5.2rem);line-height:.9;margin:0;color:#fff}
+.contact .intro-copy{margin:20px 0 0;max-width:42ch;color:var(--on-ink);font-size:1.1rem}
+.direct{list-style:none;margin:36px 0 0;padding:0}
+.direct li{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.direct li:first-child{border-top:1px solid rgba(255,255,255,.14)}
+.direct .k{color:var(--on-ink-muted);font-size:.9rem;display:block}
+.direct a{color:#fff;font-weight:600;text-decoration-color:rgba(255,255,255,.35);text-underline-offset:4px;word-break:break-all}
+.direct a:hover{text-decoration-color:var(--tally)}
+.copy{flex:none;background:transparent;color:var(--on-ink);border:1px solid rgba(255,255,255,.28);border-radius:999px;min-height:40px;padding:0 16px;font:600 .9rem var(--body);cursor:pointer}
+.copy:hover{border-color:var(--tally);color:var(--tally)}
+
+.form{background:var(--ink-2);border-radius:20px;padding:clamp(22px,3.5vw,36px);display:grid;gap:18px}
+.two{display:grid;gap:18px}
+@media (min-width:600px){.two{grid-template-columns:1fr 1fr}}
+.field label{display:block;margin-bottom:8px;font-weight:600;color:#fff}
+.field .opt{color:var(--on-ink-muted);font-weight:400}
+.field input,.field textarea{width:100%;min-height:52px;padding:14px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.2);background:var(--field);color:#fff;font:400 16px/1.5 var(--body);transition:border-color .15s,box-shadow .15s}
+.field textarea{min-height:150px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.4)}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--tally);box-shadow:0 0 0 3px rgba(255,194,61,.25)}
+/* Keep Chrome/Safari autofill on-brand instead of light blue */
+.field input:-webkit-autofill,
+.field input:-webkit-autofill:hover{-webkit-text-fill-color:#fff;caret-color:#fff;-webkit-box-shadow:0 0 0 1000px var(--field) inset;box-shadow:0 0 0 1000px var(--field) inset;transition:background-color 99999s ease-out 0s}
+.field input:-webkit-autofill:focus{-webkit-text-fill-color:#fff;-webkit-box-shadow:0 0 0 1000px var(--field) inset,0 0 0 3px rgba(255,194,61,.25);box-shadow:0 0 0 1000px var(--field) inset,0 0 0 3px rgba(255,194,61,.25)}
+.field.bad input,.field.bad textarea{border-color:#FF8F8F}
+.err{margin:6px 0 0;color:#FFB4B4;font-size:.9rem}
+.err:empty{display:none}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-foot{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px}
+.send{background:var(--tally);color:var(--ink);border-color:var(--tally)}
+.send:hover{background:#fff;border-color:#fff}
+.send[disabled]{opacity:.65;cursor:progress}
+.form-status{margin:0;font-weight:500}
+.form-status.ok{color:#A6F2C6}
+.form-status.fail{color:#FFB4B4}
+.form-status a{color:#fff;text-underline-offset:3px}
+.note{margin:0;color:var(--on-ink-muted);font-size:.88rem}
+
+.foot{margin-top:clamp(64px,8vw,96px);padding-top:24px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--on-ink-muted);font-size:.92rem}
+.foot a{color:var(--on-ink)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ganesh Mohan, back to top"><span class="mono" aria-hidden="true">GM</span><span>Ganesh Mohan</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#career">Career</a>
+      <a href="#results">Results</a>
+      <a href="#work">Work</a>
+      <a href="#toolkit">Toolkit</a>
+      <a class="btn btn-solid btn-sm" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="status"><span class="tally" aria-hidden="true"></span>Currently leading product at CONTUS TECH</p>
+      <div class="hero-grid">
+        <h1>Ganesh<br>Mohan</h1>
+        <div>
+          <p class="lede">Product lead for B2B SaaS, streaming and AI platforms. For 5+ years I've taken products from zero to one and scaled them. Today I lead a platform used by <strong>500+ enterprise customers</strong>.</p>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/ganesh-mohan-product-manager/" target="_blank" rel="noopener">View LinkedIn</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="player" id="career" aria-label="Career timeline">
+        <div class="player-head">
+          <strong id="ch-count">Career</strong>
+          <span id="ch-dates"></span>
+        </div>
+        <div class="chapter" id="chapter" role="tabpanel" tabindex="0">
+          <div>
+            <h2 id="ch-role">Product Manager</h2>
+            <p class="org" id="ch-org">CONTUS TECH</p>
+            <p class="sum" id="ch-sum"></p>
+            <div class="figs" id="ch-figs"></div>
+          </div>
+          <ul class="points" id="ch-points"></ul>
+        </div>
+        <div class="scrub" id="scrub" role="tablist" aria-label="Career chapters, use arrow keys to move"></div>
+        <noscript><p>Turn on JavaScript to browse the career timeline.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="results" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>The numbers so far</h2>
+        <p>Results from five years across three companies, from B2C campaigns to enterprise SaaS.</p>
+      </div>
+      <dl class="results">
+        <div><dt>500+</dt><dd>active enterprise customers on the B2B SaaS platform I lead today.</dd></div>
+        <div><dt>$3M</dt><dd>revenue stream I'm responsible for, including enterprise retention and commercialisation.</dd></div>
+        <div><dt>~40%</dt><dd>lower AI inference cost after moving to open-source models on self-managed infrastructure.</dd></div>
+        <div><dt>12 → 6</dt><dd>months to production readiness, using an AI-augmented product delivery model.</dd></div>
+        <div><dt>60% → 5%</dt><dd>drop in customer-reported issues within three months at PeopleOne.</dd></div>
+        <div><dt>1.6×</dt><dd>the quarterly revenue target, through 15+ B2C initiatives and campaigns at Redmind.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="work" style="padding-top:0">
+    <div class="wrap work">
+      <div class="sec-head">
+        <h2>Product bets that paid off</h2>
+        <p>Four decisions: what the situation needed, what I did and what changed.</p>
+      </div>
+      <div>
+        <article class="case">
+          <h3>Bringing AI inference in-house</h3>
+          <p class="where">CONTUS TECH, 2025–2026</p>
+          <p>AI features had to reach 500+ customers without depending on third-party AI providers. I built the inference strategy around open-source models and self-managed infrastructure, then pitched the AI roadmap to ecosystem partners to fund experimentation.</p>
+          <ul class="out"><li>~40% lower inference cost</li><li>$20K+ in grants and credits</li><li>AI at scale across 500+ customers</li></ul>
+        </article>
+        <article class="case">
+          <h3>One integration layer for every provider</h3>
+          <p class="where">CONTUS TECH</p>
+          <p>Each customer wanted different third-party services. I architected a provider-agnostic integration framework, run from a centralised control plane, so services can be configured and deployed per customer instead of being rebuilt each time.</p>
+          <ul class="out"><li>Less integration effort</li><li>Faster implementation</li><li>Lower infrastructure cost</li></ul>
+        </article>
+        <article class="case">
+          <h3>Halving a 12-month roadmap</h3>
+          <p class="where">CONTUS TECH</p>
+          <p>I introduced a hybrid operating model that brings AI-assisted discovery and requirements engineering into Agile delivery, alongside continuous discovery through customer interviews, pilots and usage signals.</p>
+          <ul class="out"><li>Production-ready in 6 months, not 12</li></ul>
+        </article>
+        <article class="case">
+          <h3>Turning product quality around</h3>
+          <p class="where">PeopleOne Technologies, 2023–2024</p>
+          <p>Customer-reported issues were high across the accounts I managed. I ran support-ticket and root-cause analysis, re-prioritised the backlog around the biggest causes and drove fixes across engineering, design and support.</p>
+          <ul class="out"><li>Issues down from 60% to 5% in 3 months</li><li>40% faster project delivery</li><li>25% revenue growth</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="toolkit" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>What I work with</h2>
+        <p>Product craft first, with enough technical depth to make trade-offs with engineering.</p>
+      </div>
+      <div class="kit">
+        <div><h3>Product</h3><ul class="chips"><li>Product strategy</li><li>Discovery</li><li>0→1 development</li><li>Roadmapping</li><li>PRDs</li><li>RICE, MoSCoW, Kano</li><li>OKRs and KPIs</li><li>NPS and CSAT</li><li>User research</li><li>Product analytics</li><li>Go-to-market</li><li>Agile and Scrum</li></ul></div>
+        <div><h3>OTT and streaming</h3><ul class="chips"><li>OTT SaaS</li><li>Video streaming</li><li>CMS and metadata</li><li>Content discovery</li><li>Personalisation</li><li>Recommendation systems</li><li>HLS and DASH</li><li>Multi-DRM</li><li>Transcoding</li><li>CDN</li><li>Connected TV</li><li>Subscriptions and monetisation</li></ul></div>
+        <div><h3>AI and platform</h3><ul class="chips"><li>LLMs</li><li>RAG</li><li>Agentic workflows</li><li>Open-source models</li><li>AI inference</li><li>Vector databases</li><li>Prompt engineering</li><li>AI infrastructure</li><li>LangChain</li><li>Rapid prototyping</li></ul></div>
+        <div><h3>Tools and tech</h3><ul class="chips"><li>SQL</li><li>GA4</li><li>Mixpanel</li><li>Microsoft Clarity</li><li>Jira</li><li>Confluence</li><li>Productboard</li><li>Figma</li><li>Miro</li><li>Whimsical</li><li>APIs and integrations</li><li>C#</li><li>Three.js</li></ul></div>
+      </div>
+      <ul class="creds">
+        <li><b>Certified Scrum Product Owner</b><span>CSPO</span></li>
+        <li><b>Bachelor of Computer Applications</b><span>Periyar University, 2017–2020</span></li>
+        <li><b>Digital Marketing program</b><span>IIT Delhi</span></li>
+        <li><b>Best Project awards</b><span>Across 10+ institutions</span></li>
+        <li><b>Co-founder</b><span>Service business and operations</span></li>
+        <li><b>Languages</b><span>English (fluent), Tamil (native)</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div>
+          <h2>Let's talk about what you're building.</h2>
+          <p class="intro-copy">Hiring a product lead, or working on streaming, SaaS or AI? Send a note here and it lands straight in my inbox.</p>
+          <ul class="direct">
+            <li>
+              <div><span class="k">Email</span><a href="mailto:iamganeshmohan@gmail.com">iamganeshmohan@gmail.com</a></div>
+              <button class="copy" type="button" id="copy-email" aria-live="polite">Copy</button>
+            </li>
+            <li>
+              <div><span class="k">LinkedIn</span><a href="https://www.linkedin.com/in/ganesh-mohan-product-manager/" target="_blank" rel="noopener">Message or connect with me</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="two">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" aria-describedby="err-name" required>
+              <p class="err" id="err-name"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" aria-describedby="err-email" required>
+              <p class="err" id="err-email"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="company">Company <span class="opt">(optional)</span></label>
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Where you work">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="The role, the product or the problem you'd like to discuss" aria-describedby="err-message" required></textarea>
+            <p class="err" id="err-message"></p>
+          </div>
+          <div class="hp" aria-hidden="true"><label for="_honey">Leave empty</label><input id="_honey" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+          <div class="form-foot">
+            <button class="btn send" type="submit" id="send">Send message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </div>
+          <p class="note">Your email is only used to reply to you.</p>
+        </form>
+      </div>
+
+      <footer class="foot">
+        <span>© <span id="yr">2026</span> Ganesh Mohan</span>
+        <a href="#top">Back to top</a>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<script>
+(function(){
+  "use strict";
+  var EMAIL = "iamganeshmohan@gmail.com";
+  var FORM_ENDPOINT = "https://formsubmit.co/ajax/" + EMAIL;
+
+  var chapters = [
+    {start:"2019-01", end:"2020-01", role:"AR/VR Analyst", short:"AR/VR Analyst", org:"Redmind Technologies",
+     sum:"Started in analytics, studying how people used AR and mixed-reality experiences and where they dropped off.",
+     points:["Analysed MAU, engagement, retention and drop-off across AR/MR experiences","Used funnel analysis and cohort segmentation to find friction and back UX changes with data","Worked with 5+ onshore stakeholders on AI-enabled mixed-reality solutions"],
+     figs:[["2×","engagement time"],["30%","lower drop-off"]]},
+    {start:"2020-02", end:"2023-07", role:"Associate Product Manager", short:"Associate PM", org:"Redmind Technologies",
+     sum:"Moved into product, owning requirements from problem to release and the KPIs that proved them.",
+     points:["Wrote PRDs, epics, user stories and acceptance criteria through UAT and release","Prioritised with RICE, MoSCoW, Kano and value-vs-effort","Built voice-of-customer loops from NPS, CSAT, interviews and support signals","Ran Agile delivery across refinement, sprint planning, UAT and release"],
+     figs:[["15+","B2C initiatives shipped"],["1.6×","quarterly revenue target"]]},
+    {start:"2023-07", end:"2024-12", role:"Group Product Manager", short:"Group PM", org:"PeopleOne Technologies",
+     sum:"Ran two products and parallel roadmaps, from discovery and analytics to launch and adoption.",
+     points:["Shipped 10+ features across 2 products","Led customer and senior-management engagements across 10+ accounts","Used GA4, Microsoft Clarity and behavioural analytics to fix friction in key journeys","Partnered on AI-led initiatives that improved efficiency and experience by ~30%"],
+     figs:[["60% → 5%","customer-reported issues in 3 months"],["25%","revenue growth"]]},
+    {start:"2024-12", end:null, role:"Product Manager", short:"Product Lead", org:"CONTUS TECH",
+     sum:"Leading product for a global B2B SaaS platform: strategy, roadmap, AI and the commercial results that follow.",
+     points:["Own strategy, roadmap and releases for 500+ enterprise customers and a $3M revenue stream","Built the AI inference strategy on open-source models and self-managed infrastructure","Architected a provider-agnostic integration framework with a central control plane","Introduced an AI-augmented operating model that took a 12-month plan to production in 6"],
+     figs:[["500+","enterprise customers"],["~40%","lower AI inference cost"],["$20K+","AI grants and credits"]]}
+  ];
+
+  function $(s){ return document.querySelector(s); }
+  function parse(s){ var p = s.split("-"); return new Date(+p[0], +p[1] - 1, 1); }
+  function months(a, b){ return (b.getFullYear() - a.getFullYear()) * 12 + (b.getMonth() - a.getMonth()); }
+  function fmt(d){ return d.toLocaleDateString("en-US", {month:"short", year:"numeric"}); }
+  function dur(n){
+    var y = Math.floor(n / 12), m = n % 12, out = [];
+    if (y) out.push(y + (y > 1 ? " yrs" : " yr"));
+    if (m) out.push(m + (m > 1 ? " mos" : " mo"));
+    return out.join(" ") || "1 mo";
+  }
+  function el(tag, cls, text){ var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+  /* Career player */
+  var scrub = $("#scrub"), panel = $("#chapter"), player = $("#career");
+  var current = chapters.length - 1;
+
+  var tabs = chapters.map(function(c, i){
+    var s = parse(c.start), e = c.end ? parse(c.end) : new Date();
+    c.m = Math.max(1, months(s, e));
+    c.range = fmt(s) + " – " + (c.end ? fmt(e) : "Present") + ", " + dur(c.m);
+    var b = el("button", "seg");
+    b.type = "button"; b.id = "seg-" + i;
+    b.setAttribute("role", "tab");
+    b.setAttribute("aria-controls", "chapter");
+    b.setAttribute("aria-selected", "false");
+    b.setAttribute("aria-label", c.role + ", " + c.org + ", " + c.range);
+    b.tabIndex = -1;
+    b.style.setProperty("--m", c.m);
+    b.style.setProperty("--i", i);
+    var bar = el("span", "bar"); bar.appendChild(el("i"));
+    var head = el("b", "head"); head.setAttribute("aria-hidden", "true");
+    b.append(bar, head, el("span", "yr", String(s.getFullYear())), el("span", "rl", c.short));
+    b.addEventListener("click", function(){ select(i, true); });
+    scrub.appendChild(b);
+    return b;
+  });
+
+  function render(c, i){
+    $("#ch-count").textContent = "Chapter " + (i + 1) + " of " + chapters.length;
+    $("#ch-dates").textContent = c.range;
+    $("#ch-role").textContent = c.role;
+    $("#ch-org").textContent = c.org;
+    $("#ch-sum").textContent = c.sum;
+    var ul = $("#ch-points"); ul.textContent = "";
+    c.points.forEach(function(p){ ul.appendChild(el("li", "", p)); });
+    var figs = $("#ch-figs"); figs.textContent = "";
+    c.figs.forEach(function(f){ var d = el("div", "fig"); d.append(el("b", "", f[0]), el("span", "", f[1])); figs.appendChild(d); });
+  }
+  function setPlayed(i){ tabs.forEach(function(t, j){ t.classList.toggle("played", j <= i); }); }
+  function select(i, user){
+    current = i;
+    tabs.forEach(function(t, j){ t.setAttribute("aria-selected", j === i ? "true" : "false"); t.tabIndex = j === i ? 0 : -1; });
+    panel.setAttribute("aria-labelledby", tabs[i].id);
+    render(chapters[i], i);
+    if (user){
+      player.classList.remove("intro");
+      setPlayed(i);
+      panel.classList.remove("swap"); void panel.offsetWidth; panel.classList.add("swap");
+    }
+  }
+  scrub.addEventListener("keydown", function(e){
+    var n = null, last = tabs.length - 1;
+    if (e.key === "ArrowRight") n = current === last ? 0 : current + 1;
+    else if (e.key === "ArrowLeft") n = current === 0 ? last : current - 1;
+    else if (e.key === "Home") n = 0;
+    else if (e.key === "End") n = last;
+    if (n !== null){ e.preventDefault(); select(n, true); tabs[n].focus(); }
+  });
+
+  // One orchestrated moment on load: the timeline "buffers" up to today.
+  player.classList.add("intro");
+  select(current, false);
+  setTimeout(function(){ setPlayed(current); }, 350);
+  setTimeout(function(){ player.classList.remove("intro"); }, 1600);
+
+  /* Header border on scroll */
+  var header = $(".site-head");
+  function onScroll(){ header.classList.toggle("scrolled", window.scrollY > 8); }
+  window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+  /* Copy email */
+  var copyBtn = $("#copy-email");
+  copyBtn.addEventListener("click", function(){
+    function done(t){ copyBtn.textContent = t; setTimeout(function(){ copyBtn.textContent = "Copy"; }, 2000); }
+    if (navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(EMAIL).then(function(){ done("Copied"); }, function(){ window.prompt("Copy my email:", EMAIL); });
+    } else { window.prompt("Copy my email:", EMAIL); }
+  });
+
+  /* Contact form */
+  var form = $("#contact-form"), statusEl = $("#form-status"), sendBtn = $("#send");
+  var rules = {
+    name: function(v){ return v.trim().length >= 2 || "Enter your name."; },
+    email: function(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) || "Enter a valid email so I can reply."; },
+    message: function(v){ return v.trim().length >= 10 || "Write a message of at least 10 characters."; }
+  };
+  function field(n){ return form.elements.namedItem(n); }
+  function check(n){
+    var f = field(n), r = rules[n](f.value), ok = r === true;
+    f.closest(".field").classList.toggle("bad", !ok);
+    f.setAttribute("aria-invalid", ok ? "false" : "true");
+    $("#err-" + n).textContent = ok ? "" : r;
+    return ok;
+  }
+  Object.keys(rules).forEach(function(n){
+    var f = field(n);
+    f.addEventListener("blur", function(){ if (f.value) check(n); });
+    f.addEventListener("input", function(){ if (f.closest(".field").classList.contains("bad")) check(n); });
+  });
+
+  function subjectText(d){ return "Portfolio message from " + (d.name || ""); }
+  function bodyText(d){
+    return (d.message || "") + "\n\n" + (d.name || "") + (d.company ? ", " + d.company : "") + (d.email ? "\n" + d.email : "");
+  }
+  // Opens Gmail's compose window in the browser: works without any email app installed.
+  function gmailLink(d){
+    return "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(EMAIL) +
+      "&su=" + encodeURIComponent(subjectText(d)) + "&body=" + encodeURIComponent(bodyText(d));
+  }
+  // Opens the visitor's default email app (Outlook, Apple Mail, phone mail apps).
+  function mailtoLink(d){
+    return "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subjectText(d)) + "&body=" + encodeURIComponent(bodyText(d));
+  }
+  function showFallback(d, lead){
+    statusEl.className = "form-status fail";
+    statusEl.textContent = lead + " Send it with ";
+    var g = el("a", "", "Gmail"); g.href = gmailLink(d); g.target = "_blank"; g.rel = "noopener";
+    var m = el("a", "", "your email app"); m.href = mailtoLink(d);
+    statusEl.append(g, document.createTextNode(" or "), m, document.createTextNode(" instead."));
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var bad = Object.keys(rules).filter(function(n){ return !check(n); });
+    if (bad.length){ field(bad[0]).focus(); return; }
+
+    var fd = new FormData(form), data = {};
+    fd.forEach(function(v, k){ data[k] = v; });
+
+    // Opened as a file on the computer: the form service needs a real website, so go straight to the fallback.
+    if (location.protocol === "file:"){
+      showFallback(data, "The form works once the site is live.");
+      return;
+    }
+
+    data._subject = subjectText(data);
+    data._template = "table";
+    data._replyto = data.email;
+
+    sendBtn.disabled = true; sendBtn.textContent = "Sending…";
+    statusEl.className = "form-status"; statusEl.textContent = "";
+
+    fetch(FORM_ENDPOINT, {
+      method: "POST",
+      headers: {"Content-Type": "application/json", "Accept": "application/json"},
+      body: JSON.stringify(data)
+    })
+    .then(function(res){ return res.json().catch(function(){ return {}; }).then(function(out){
+      if (!res.ok || String(out.success) !== "true") throw new Error(out.message || "Request failed");
+    }); })
+    .then(function(){
+      form.reset();
+      statusEl.className = "form-status ok";
+      statusEl.textContent = "Message sent. I'll reply to " + data.email + " soon.";
+    })
+    .catch(function(){
+      showFallback(data, "Couldn't send right now.");
+    })
+    .then(function(){ sendBtn.disabled = false; sendBtn.textContent = "Send message"; });
+  });
+
+  $("#yr").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
